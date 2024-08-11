@@ -6,23 +6,20 @@ export default defineNuxtRouteMiddleware(async (to, from) => {
     const token = useCookie("token").value;
 
     try {
-        await $fetch('https://dummyjson.com/auth/RESOURCE', {
+        await $fetch('https://dummyjson.com/auth', {
             method: "GET",
             headers: {
                 "Content-Type": "application/json",
                 'Authorization': `Bearer ${token}`,
             }
         })
-    } catch (err: any) {
-        const notFound = 404
-        if (err.status === notFound) {
-            store.login();
-            if (to.path !== "/users") {
-                return navigateTo("/users")
-            }
-            return;
+        store.login();
+        if (to.path !== "/users") {
+            return navigateTo("/users")
         }
+        return;
 
+    } catch (err: any) {
         if (to.path !== "/") {
             return navigateTo("/");
         }
