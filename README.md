@@ -10,6 +10,11 @@ Framework JavaScript para desenvolvimento front-end baseado no Vue.js
 
 ## Como executar o projeto
 
+### Requisitos
+* node.js
+* npm
+* git
+
 Abra seu terminal e crie uma pasta:
 ```
 mkdir vue-project
