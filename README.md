@@ -1,75 +1,36 @@
-# Nuxt 3 Minimal Starter
+# Projeto - Desafio Vue e Nuxt
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+## Tecnologias Utilizadas
 
-## Setup
+### Vue.js
+Framework JavaScript para desenvolvimento front-end
 
-Make sure to install the dependencies:
+### Nuxt.js
+Framework JavaScript para desenvolvimento front-end baseado no Vue.js
 
-```bash
-# npm
-npm install
+## Como executar o projeto
 
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
+Abra seu terminal e crie uma pasta:
+```
+mkdir vue-project
 ```
 
-## Development Server
+Entre na pasta:
+```
+cd vue-project
+```
 
-Start the development server on `http://localhost:3000`:
+Clone o repositório:
+```
+git clone https://github.com/Higas01/teste-frontend-vue .
+```
 
-```bash
-# npm
+Instale as dependências:
+```
+npm i
+```
+
+Execute localmente:
+```
 npm run dev
-
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
 ```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
