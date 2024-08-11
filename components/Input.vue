@@ -4,8 +4,7 @@ defineProps({
     label: String,
     type: {
         type: String,
-        default: "text",
-        validator: value => ["email", "password"].includes(value), 
+        validator: value => ["password", "text"].includes(value), 
     },
     
 })
